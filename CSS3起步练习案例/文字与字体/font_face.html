@@ -1,0 +1,55 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>嵌入字体</title>
+<style type="text/css">
+div {
+	margin-top: 10px;
+	margin-left: 50px;
+	padding: 5px;
+	width: 700px;
+        border: 1px solid #930;
+        background-image: url(img/bg.gif)
+
+}
+@font-face {
+	font-family: Chunkfive;
+        src:url(font/Chunkfive.otf);
+}
+
+@font-face {
+	font-family: FFF_Tusj;
+        src:url(font/FFF_Tusj.ttf) format("truetype");
+}
+
+.test1 {
+         font-family: Chunkfive;
+}
+
+.test2 {
+         font-family: FFF_Tusj;
+}
+</style>
+</head>
+<body>
+
+
+
+<div>
+<p>@font-face 语法可以将服务器端的字体文件嵌入到浏览器中</p>
+<p>Sometimes text will have to be clipped. For instance when it overflows the element’s box. </p>
+</div>
+
+<div class="test1">
+<p>@font-face 语法可以将服务器端的字体文件嵌入到浏览器中</p>
+<p>Sometimes text will have to be clipped. For instance when it overflows the element’s box. </p>
+</div>
+
+<div class="test2">
+<p>@font-face 语法可以将服务器端的字体文件嵌入到浏览器中</p>
+<p>Sometimes text will have to be clipped. For instance when it overflows the element’s box. </p>
+</div>
+</body>
+</html>
+

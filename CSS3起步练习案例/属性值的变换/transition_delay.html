@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>设定变换的延迟时间</title>
+<style type="text/css">
+#layout {
+	margin-top: 10px;
+	padding: 10px;
+	height: 110px;
+	width: 600px;
+	border: 1px solid #F00;
+	background-color: #FFC;
+}
+#test {
+	position: absolute;
+	  -moz-transition-property:  left;
+	  -moz-transition-duration: 5s;
+	  -moz-transition-delay: 2s;
+	  -webkit-transition-property: left;
+	  -webkit-transition-duration: 5s;
+	  -webkit-transition-delay: 2s;
+	  -o-transition-property: left;
+	  -o-transition-duration: 5s;
+	  -o-transition-delay: 2s;
+	  transition-property: left;
+	  transition-duration: 5s;
+	  transition-delay: 3s;
+	text-align: center;
+	background-image: url(img/BG09.gif);
+	left: 10px;
+	color: red;
+	width: 100px;
+	height: 110px;
+	font-size: 10pt;
+	border: 1px solid #000;
+}
+#test:hover {
+	left: 525px;
+}
+</style>
+</head>
+<body>
+<div id="layout"><div id="test">水平移动的DIV块</div></div>
+</body>
+</html> 
+
+
+

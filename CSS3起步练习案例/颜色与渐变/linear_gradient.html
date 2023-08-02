@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>设定DIV块的线性色彩渐变</title>
+<style type="text/css">
+body{
+        background-color:rgb(255,255,204);
+}
+div {
+	margin-top: 10px;
+	margin-left: 20px;
+	padding: 3px;
+	width: 450px;
+	height:200px;
+        color: white;
+}
+
+#test1 {
+	background:linear-gradient(right top ,#0000ff,#ff0000);
+        background:-moz-linear-gradient(right top,#0000ff,#ff0000);
+        background:-o-linear-gradient(right top,#0000ff,#ff0000);
+        background:-webkit-gradient(linear, right top, left bottom, from(#0000ff), to(#ff0000));
+
+}
+#test2 {
+	background:linear-gradient(#0000ff,#ff0000);
+        background:-moz-linear-gradient(#0000ff,#ff0000);
+        background:-o-linear-gradient(#0000ff,#ff0000);
+        background:-webkit-gradient(linear, left top, left bottom, from(#0000ff), to(#ff0000));
+}
+#test3 {
+	background:linear-gradient(left ,#0000ff,#ff0000);
+        background:-moz-linear-gradient(left,#0000ff,#ff0000);
+        background:-o-linear-gradient(left,#0000ff,#ff0000);
+        background:-webkit-gradient(linear, left top, right top, from(#0000ff), to(#ff0000));
+}
+
+</style>
+</head>
+<body>
+<div id="test1">test1</div>
+<div id="test2">test2</div>
+<div id="test3">test3</div>
+</body>
+</html>
+

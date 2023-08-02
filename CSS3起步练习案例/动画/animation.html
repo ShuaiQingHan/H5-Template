@@ -1,0 +1,46 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>动画脚本设定</title>
+<style type="text/css">
+@keyframes mymovie {
+	0% {
+	      left: 0px;
+	      top: 0px;
+	     }
+	20% {
+	      left: 200px;
+	      top: 0px;
+	     }
+	70% {
+	      left: 200px;
+	      top: 200 ;
+	     }
+	100%  {
+	      left: 400px;
+	      top: 200px;
+	     }
+}
+body {
+	margin: 0;
+}
+div { 
+	position: absolute;
+	padding: 10px;
+	height: 100px;
+	width: 100px;
+	border: 1px solid #F00;
+	background-image: url(img/BG09.gif);
+	animation-name: mymovie;
+	animation-duration: 10s; 
+}
+</style>
+</head>
+<body>
+<div>漂移的div</div>
+</body>
+</html> 
+
+
+

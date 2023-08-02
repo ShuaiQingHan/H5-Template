@@ -1,0 +1,50 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>设定字体的比例</title>
+<style type="text/css">
+div {
+	margin-top: 10px;
+	margin-left: 50px;
+	padding: 5px;
+	width: 600px;
+        border: 1px solid #930;
+        background-image: url(img/bg.gif)
+
+}
+code {
+        font-size: 12px;
+        color: #FF0000;
+}
+
+.test1 {
+         font-family: Vani, "Times New Roman";
+         font-size: 18px;
+	 font-size-adjust: 0.8;
+	 
+
+}
+.test2 {
+         font-family: Verdana, "Times New Roman";
+         font-size: 18px;
+         font-size-adjust: 0.8;
+         
+}
+
+</style>
+</head>
+<body>
+
+<p>font-size-adjust属性原先是CSS2所制定，但在CSS2.1时被删除，在CSS3中又被加入并更新定义。</p>
+
+<div><code>font-family: Vani, "Times New Roman";font-size: 18px;font-size-adjust: 0.8;</code><br/>
+<p class="test1">Sometimes text will have to be clipped. For instance when it overflows the element’s box. </p>
+</div>
+
+<div><code>font-family: Verdana, "Times New Roman";font-size: 18px;font-size-adjust: 0.8;</code><br/>
+<p class="test2">Sometimes text will have to be clipped. For instance when it overflows the element’s box. </p>
+</div>
+</body>
+</html>
+

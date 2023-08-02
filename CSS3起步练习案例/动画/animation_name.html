@@ -1,0 +1,86 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>指定动画脚本</title>
+<style type="text/css">
+@keyframes mymovie {
+	0% {
+	      left: 0px;
+	      top: 0px;
+	     }
+	20% {
+	      left: 200px;
+	      top: 0px;
+	     }
+	70% {
+	      left: 200px;
+	      top: 200 ;
+	     }
+	100%  {
+	      left: 400px;
+	      top: 200px;
+	     }
+}
+@-moz-keyframes mymovie {
+	0% {
+	      left: 0px;
+	      top: 0px;
+	     }
+	20% {
+	      left: 200px;
+	      top: 0px;
+	     }
+	70% {
+	      left: 200px;
+	      top: 200 ;
+	     }
+	100%  {
+	      left: 400px;
+	      top: 200px;
+	     }
+}
+@-webkit-keyframes mymovie {
+	0% {
+	      left: 0px;
+	      top: 0px;
+	     }
+	20% {
+	      left: 200px;
+	      top: 0px;
+	     }
+	70% {
+	      left: 200px;
+	      top: 200 ;
+	     }
+	100%  {
+	      left: 400px;
+	      top: 200px;
+	     }
+}
+body {
+	margin: 0;
+}
+div { 
+	position: absolute;
+	padding: 10px;
+	height: 100px;
+	width: 100px;
+	border: 1px solid #F00;
+	background-image: url(img/BG08.gif);
+	animation-name: mymovie;
+	animation-duration: 5s;
+	-moz-animation-name: mymovie;
+	-moz-animation-duration: 5s;
+	-webkit-animation-name: mymovie;
+	-webkit-animation-duration: 5s; 
+}
+</style>
+</head>
+<body>
+<div>漂移的DIV块</div>
+</body>
+</html> 
+
+
+

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>变换div的背景属性</title>
+<style type="text/css">
+div {
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #6FF;
+	height: 100px;
+
+	-moz-transition-property: background-color, background-image;
+	-webkit-transition-property: background-color, background-image;
+	-o-transition-property: background-color, background-image;
+	transition-property: background-color, background-image;
+}
+#test1 {
+	background-color: #F00;
+}
+#test1:hover {
+	background-color: #FF9;
+}
+
+#test2 {
+	background-image: url("img/BG06.gif");
+}
+#test2:hover {
+	background-image: url("img/BG08.gif");
+}
+
+</style>
+</head>
+<body>
+<div id="test1">背景颜色变换</div>
+<div id="test2">背景图案变换</div>
+</body>
+</html> 
+
+
+

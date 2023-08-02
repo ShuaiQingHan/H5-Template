@@ -1,0 +1,44 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>元素水平显示设定</title>
+<style type="text/css">
+div {
+	margin-top: 30px;
+	margin-left: 30px;
+	padding: 20px;
+	width: 400px;
+	height: 50px;
+        border: 1px solid #930;
+	text-align: center;
+	font-weight: bolder;
+	color: black;
+        white-space: nowrap;
+}
+#test1 {
+	 -ms-overflow-x: visible;
+         overflow-x: visible;
+}
+#test2 {
+	 -ms-overflow-x: hidden;
+         overflow-x: hidden;
+}
+#test3 {
+	 -ms-overflow-x: scroll;
+         overflow-x: scroll;
+}
+#test4 {
+	 -ms-overflow-x: auto;
+         overflow-x: auto;
+}
+</style>
+</head>
+<body>
+<div id="test1"><p>不裁切任何元素标签内容, 同时不显示滚动条、不做显示区域设定</p></div>
+<div id="test2"><p>将元素的标签内容嵌入显示区域，同时不显示滚动条， 但会依显示区域大小裁切元素的标签内容</p></div>
+<div id="test3"><p>将元素的标签内容嵌入显示区域，显示水平滚动条， 但视情况显示可滚动或不可滚动</p></div>
+<div id="test4"><p>将元素的标签内容嵌入显示区域，并视情况自动显示水平滚动条</p></div>
+</body>
+</html>
+

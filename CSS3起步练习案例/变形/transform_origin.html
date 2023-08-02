@@ -1,0 +1,64 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>设定变形基准点</title>
+<style type="text/css">
+div {
+	margin-top: 10px;
+	padding: 10px;
+	height: 80px;
+	width: 110px;
+	border: 1px solid #00F;
+	background-image: url(img/BG07.gif);
+}
+#test1 {
+	transform: translate(80px, 120px) scale(1.5, 1.5) rotate(45deg);
+	-ms-transform: translate(80px, 120px) scale(1.5, 1.5) rotate(45deg);
+        -moz-transform: translate(80px, 120px) scale(1.5, 1.5) rotate(45deg);
+        -webkit-transform: translate(80px, 120px) scale(1.5, 1.5) rotate(45deg);
+	-o-transform: translate(80px, 120px) scale(1.5, 1.5) rotate(45deg);
+	-moz-transform-origin: 25% 65%; 
+	-webkit-transform-origin: 25% 65%; 
+	-o-transform-origin: 25% 65%; 
+	-ms-transform-origin: 25% 65%; 
+	transform-origin: 25% 65%; 
+
+}
+#test2 {
+	transform: translate(500px, -80px) scale(2) skew(15deg, 30deg);
+	-ms-transform: translate(500px, -80px) scale(2) skew(15deg, 30deg);
+        -moz-transform: translate(500px, -80px) scale(2) skew(15deg, 30deg);
+        -webkit-transform: translate(500px, -80px) scale(2) skew(15deg, 30deg);
+	-o-transform: translate(500px, -80px) scale(2) skew(15deg, 30deg);
+	-moz-transform-origin: right bottom; 
+	-webkit-transform-origin: right bottom; 
+	-o-transform-origin: right bottom; 
+	-ms-transform-origin: right bottom; 
+	transform-origin: right bottom; 
+
+}
+#test3 {
+	transform: translate(300px, -180px) scale(.8) skew(25deg);
+	-ms-transform: translate(300px, -180px) scale(.8) skew(25deg);
+        -moz-transform: translate(300px, -180px) scale(.8) skew(25deg);
+        -webkit-transform: translate(300px, -180px) scale(.8) skew(25deg);
+	-o-transform: translate(300px, -180px) scale(.8) skew(25deg);
+	-moz-transform-origin: left top; 
+	-webkit-transform-origin: left top; 
+	-o-transform-origin: left top; 
+	-ms-transform-origin: left top; 
+	transform-origin: left top; 
+}
+</style>
+</head>
+<body>
+<div>原始状态</div>
+<div id="test1">位移、放大、旋转DIV块</div>
+<div id="test2">位移、放大、倾斜DIV块</div>
+<div id="test3">位移、缩小、倾斜DIV块</div>
+</body>
+</html> 
+
+
+

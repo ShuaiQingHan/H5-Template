@@ -1,0 +1,52 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>裁切文件内容</title>
+<style type="text/css">
+div {
+	margin-top: 10px;
+	margin-left: 50px;
+	padding: 5px;
+	width: 500px;
+        border: 2px solid #930;
+        background-image: url(img/bg.gif)
+
+}
+p {
+        overflow:hidden;
+        white-space:nowrap;
+}
+code {
+        font-weight: bold;
+}
+
+.test1 {
+	 text-overflow: clip;
+         -ms-text-overflow: clip;
+}
+.test2 {
+         text-overflow: ellipsis;
+         -ms-text_overflow: ellipsis;
+}
+
+</style>
+</head>
+<body>
+<div>
+<code>text-overflow: clip;</code><br/>
+<p class="test1">text-overflow属性是用来设定元素区块内的文件内容超出所在的元素区块范围时的显示方式。</p>
+</div>
+<div><code>text-overflow: clip;</code><br/>
+<p class="test1">Sometimes text will have to be clipped. For instance when it overflows the element’s box. </p>
+</div>
+<div>
+<code>text-overflow: ellipsis;</code><br/>
+<p class="test2">text-overflow属性是用来设定元素区块内的文件内容超出所在的元素区块范围时的显示方式。</p>
+</div>
+<div><code>text-overflow: ellipsis;</code><br/>
+<p class="test2">Sometimes text will have to be clipped. For instance when it overflows the element’s box. </p>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>动画的播放设定</title>
+  <style type="text/css">  
+@-moz-keyframes mymovie {
+      from {
+        margin-left:85%;
+        width:100px;
+	height: 115px;
+      }     
+      50% {
+        margin-left:40%;
+        width:200px;
+	height: 230px;
+      }
+      to {
+        margin-left:0%;
+        width:100px;
+	height: 115px;
+      }
+}
+    
+@-webkit-keyframes mymovie {
+      from {
+        margin-left:85%;
+        width:100px;
+	height: 115px;
+      }     
+      50% {
+        margin-left:40%;
+        width:200px;
+	height: 230px;
+      }
+      to {
+        margin-left:0%;
+        width:100px;
+	height: 115px;
+      }
+}
+
+@keyframes mymovie {
+      from {
+        margin-left:85%;
+        width:100px;
+	height: 115px;
+      }     
+      50% {
+        margin-left:40%;
+        width:200px;
+	height: 230px;
+      }
+      to {
+        margin-left:0%;
+        width:100px;
+	height: 115px;
+      }
+}
+    img {
+      -moz-animation: mymovie 3s infinite alternate;
+      -webkit-animation: mymovie 3s infinite alternate;
+      animation: mymovie 3s infinite alternate;
+    }
+</style>
+</head>
+<body>
+<div><img src="img/p2.gif" alt="公仔画"></div>
+</body>
+</html> 
+
+
+

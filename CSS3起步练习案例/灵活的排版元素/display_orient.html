@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>指定子元素的排列方向</title>
+<style type="text/css">
+#layout {
+	height: 250px;
+	width: 600px;
+	margin-top: 30px;
+	padding: 10px;
+	border: 1px solid #930;
+	display: box;
+	display: -moz-box;
+	display: -webkit-box;
+	box-orient: vertical;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+}
+#test1 {
+	height: 150px;
+	color: #00F;
+	background-image: url(img/bg1.gif);
+        border: 1px solid #00F;
+}
+#test2 {
+	height: 50px;
+	color: #F00;
+	background-image: url(img/bg.gif);
+}
+#test3 {
+	height: 100px;
+	color: #0F0;
+	background-image: url(img/bg2.gif);
+	border: 1px solid #0F0;
+}
+</style>
+</head>
+<body>
+<div id="layout">
+	<div id="test1">DIV块 test1</div>
+	<div id="test2">DIV块 test2</div>
+	<div id="test3">DIV块 test3</div>
+</div>
+</body>
+</html> 
+
+
+

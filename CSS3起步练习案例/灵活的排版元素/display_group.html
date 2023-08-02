@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>指定子元素的群组</title>
+<style type="text/css">
+#layout {
+	height: 300px;
+	width: 700px;
+	margin-top: 30px;
+	padding: 10px;
+	border: 1px solid #930;
+	display: box;
+	display: -moz-box;
+	display: -webkit-box;
+}
+#test1 {
+	width: 100px;
+	color: #360;
+	background-image: url(img/BG06.gif);
+	-moz-box-ordinal-group: 2;
+	-webkit-box-ordinal-group: 2;
+	box-ordinal-group: 2;
+}
+#test2 {
+	width: 150px;
+	color: #00F;
+	background-image: url(img/BG07.gif);
+	-moz-box-ordinal-group: 3;
+	-webkit-box-ordinal-group: 3;
+	box-ordinal-group: 3;
+}
+#test3 {
+	width: 200px;
+	color: #F00;
+	background-image: url(img/BG08.gif);
+	-moz-box-ordinal-group: 2;
+	-webkit-box-ordinal-group: 2;
+	box-ordinal-group: 2;
+}
+#test4 {
+	width: 250px;
+	color: #F60;
+	background-image: url(img/BG09.gif);
+	-moz-box-ordinal-group: 1;
+	-webkit-box-ordinal-group: 1;
+	box-ordinal-group: 1;
+
+}
+</style>
+</head>
+<body>
+<div id="layout">
+	<div id="test1">DIV块 test1</div>
+	<div id="test2">DIV块 test2</div>
+	<div id="test3">DIV块 test3</div>
+	<div id="test4">DIV块 test4</div>
+</div>
+</body>
+</html> 
+
+
+

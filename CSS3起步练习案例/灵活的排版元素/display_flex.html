@@ -1,0 +1,59 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>分配父元素的水平余白</title>
+<style type="text/css">
+#layout {
+	height: 300px;
+	width: 700px;
+	margin-top: 30px;
+	padding: 10px;
+	border: 1px solid #930;
+	display: box;
+	display: -moz-box;
+	display: -webkit-box;
+}
+#test1 {
+	width: 100px;
+	color: #360;
+	background-image: url(img/BG06.gif);
+	box-flex: 2;
+	-moz-box-flex: 2;
+	-webkit-box-flex: 2;
+}
+#test2 {
+	width: 50px;
+	color: #00F;
+	background-image: url(img/BG07.gif);
+	box-flex: 3;
+	-moz-box-flex: 3;
+	-webkit-box-flex: 3;
+}
+#test3 {
+	width: 150px;
+	color: #F00;
+	background-image: url(img/BG08.gif);
+}
+#test4 {
+	width: 100px;
+	color: #F60;
+	background-image: url(img/BG09.gif);
+	box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+}
+</style>
+</head>
+<body>
+<div id="layout">
+	<div id="test1">DIV块  test1</div>
+	<div id="test2">DIV块  test2</div>
+	<div id="test3">DIV块  test3</div>
+	<div id="test4">DIV块  test4</div>
+</div>
+</body>
+</html> 
+
+
+

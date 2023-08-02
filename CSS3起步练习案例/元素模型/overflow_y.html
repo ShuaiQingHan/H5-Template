@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>元素垂直显示设置</title>
+<style type="text/css">
+div {
+	margin-top: 30px;
+	margin-left: 30px;
+	padding: 20px;
+	width: 400px;
+	height: 50px;
+        border: 1px solid #930;
+	text-align: left;
+	font-weight: bolder;
+	color: black;
+}
+#test1 {
+	 -ms-overflow-y: visible;
+         overflow-y: visible;
+}
+#test2 {
+	 -ms-overflow-x: hidden;
+         overflow-y: hidden;
+}
+#test3 {
+	 -ms-overflow-x: scroll;
+         overflow-y: scroll;
+}
+#test4 {
+	 -ms-overflow-y: auto;
+         overflow-y: auto;
+}
+</style>
+</head>
+<body>
+<div id="test1"><p>尽管CSS3新增了相当多的属性，但毕竟CSS3版本仍只是草案阶段，很多属性各家主流浏览器不见得都支持， 因此， 本书将针对CSS3 新增（或变更）而且当前至少有一家主流浏览器支持的属性加以介绍。</p></div>
+<div id="test2"><p>尽管CSS3新增了相当多的属性，但毕竟CSS3版本仍只是草案阶段， 很多属性各家主流浏览器不见得都支持， 因此， 本书将针对CSS3 新增（或变更）而且当前至少有一家主流浏览器支持的属性加以介绍。</p></div>
+<div id="test3"><p>尽管CSS3新增了相当多的属性，但毕竟CSS3版本仍只是草案阶段， 很多属性各家主流浏览器不见得都支持，因此，本书将针对CSS3 新增（或变更）而且当前至少有一家主流浏览器支持的属性加以介绍。</p></div>
+<div id="test4"><p>尽管CSS3新增了相当多的属性，但毕竟CSS3版本仍只是草案阶段， 很多属性各家主流浏览器不见得都支持， 因此，本书将针对CSS3 新增（或变更）而且当前至少有一家主流浏览器支持的属性加以介绍。</p></div>
+</body>
+</html>
+

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>逐渐放大的DIV块</title>
+<style type="text/css">
+@keyframes mymovie {
+	0% {
+	     height: 100px;
+	     width: 100px;
+	     }
+	20% {
+	     height: 150px;
+	     width: 150px;
+	     }
+	40% {
+	     height: 200px;
+	     width: 200px;
+	     }
+	60% {
+	     height: 300px;
+	     width: 300px;
+	     }
+	80% {
+	     height: 350px;
+	     width: 350px;
+	     }
+	100%  {
+	      height: 400px;
+	      width: 400px;
+	     }
+}
+@-moz-keyframes mymovie {
+	0% {
+	     height: 100px;
+	     width: 100px;
+	     }
+	20% {
+	     height: 150px;
+	     width: 150px;
+	     }
+	40% {
+	     height: 200px;
+	     width: 200px;
+	     }
+	60% {
+	     height: 300px;
+	     width: 300px;
+	     }
+	80% {
+	     height: 350px;
+	     width: 350px;
+	     }
+	100%  {
+	      height: 400px;
+	      width: 400px;
+	     }
+}
+@-webkit-keyframes mymovie {
+	0% {
+	     height: 100px;
+	     width: 100px;
+	     }
+	20% {
+	     height: 150px;
+	     width: 150px;
+	     }
+	40% {
+	     height: 200px;
+	     width: 200px;
+	     }
+	60% {
+	     height: 300px;
+	     width: 300px;
+	     }
+	80% {
+	     height: 350px;
+	     width: 350px;
+	     }
+	100%  {
+	      height: 400px;
+	      width: 400px;
+	     }
+}
+body {
+	margin: 0;
+}
+div { 
+	position: absolute;
+	padding: 10px;
+	height: 100px;
+	width: 100px;
+	border: 1px solid #00F;
+	background-image: url(img/BG07.gif);
+	animation-name: mymovie;
+	animation-duration: 3s;
+	-moz-animation-name: mymovie;
+	-moz-animation-duration: 5s;
+	-webkit-animation-name: mymovie;
+	-webkit-animation-duration: 3s; 
+}
+</style>
+</head>
+<body>
+<div>放大的DIV块</div>
+</body>
+</html> 
+
+
+

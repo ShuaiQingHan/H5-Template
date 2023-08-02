@@ -1,0 +1,77 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>指定动画帧播放顺序</title>
+<style type="text/css">
+@keyframes mymovie {
+	0% {
+	    width: 100px;
+	    height: 100px;
+	     }
+	50% {
+	    width: 200px;
+	    height: 268px;
+	     }
+	100% {
+	    width: 400px;
+	    height: 268px;
+	     }
+}
+@-moz-keyframes mymovie {
+	0% {
+	    width: 100px;
+	    height: 100px;
+	     }
+	50% {
+	    width: 200px;
+	    height: 268px;
+	     }
+	100% {
+	    width: 400px;
+	    height: 268px;
+	     }
+}
+@-webkit-keyframes mymovie {
+	0% {
+	    width: 100px;
+	    height: 100px;
+	     }
+	50% {
+	    width: 200px;
+	    height: 268px;
+	     }
+	100% {
+	    width: 400px;
+	    height: 268px;
+	     }
+}
+img { 
+	padding: 10px;
+	height: 50px;
+	margin:10px;
+	width: 50px;
+	border: 1px solid #000;
+
+	animation-name: mymovie;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	-moz-animation-name: mymovie;
+	-moz-animation-duration: 3s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-webkit-animation-name: mymovie;
+	-webkit-animation-duration: 3s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+}
+</style>
+</head>
+<body>
+<img src="img/DSC_0439.jpg" alt="绿博一日游" />
+</body>
+</html> 
+
+
+

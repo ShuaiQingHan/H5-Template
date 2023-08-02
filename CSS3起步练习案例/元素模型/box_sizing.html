@@ -1,0 +1,37 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>设定元素模型的宽、高计算方式</title>
+<style type="text/css">
+div {
+	margin-top: 30px;
+	margin-left: 30px;
+	padding: 20px;
+	width: 200px;
+	height: 200px;
+        border: 1px solid #930;
+}
+img{
+        border:0px;
+}
+
+#test1 {
+	 box-sizing: content-box;
+         -webkit-box-sizing: content-box;
+         -moz-box-sizing: content-box;
+}
+#test2 {
+	 box-sizing: border-box;
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+}
+
+</style>
+</head>
+<body>
+<div id="test1"><img src="img/DSC_0280.jpg" alt=""></div>
+<div id="test2"><img src="img/DSC_0280.jpg" alt=""></div>
+</body>
+</html>
+

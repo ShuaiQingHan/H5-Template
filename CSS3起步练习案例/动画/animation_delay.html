@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>设定动画播放的延迟时间</title>
+<style type="text/css">
+@keyframes mymovie {
+	0% {
+	    background-color: #00F;
+	     }
+	40% {
+	    background-color: #F00;
+	     }
+	70% {
+	    background-color: #F0F;
+	     }
+	100% {
+	    background-color: #0FF;
+	     }
+}
+@-moz-keyframes mymovie {
+	0% {
+	    background-color: #00F;
+	     }
+	40% {
+	    background-color: #F00;
+	     }
+	70% {
+	    background-color: #F0F;
+	     }
+	100% {
+	    background-color: #0FF;
+	     }
+}
+@-webkit-keyframes mymovie {
+	0% {
+	    background-color: #00F;
+	     }
+	40% {
+	    background-color: #F00;
+	     }
+	70% {
+	    background-color: #F0F;
+	     }
+	100% {
+	    background-color: #0FF;
+	     }
+}
+div { 
+	padding: 10px;
+	height: 80px;
+	margin:10px;
+	width: 650px;
+	border: 1px solid #000;
+
+	animation-name: mymovie;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	-moz-animation-name: mymovie;
+	-moz-animation-duration: 5s;
+	-moz-animation-delay: 2s;
+	-webkit-animation-name: mymovie;
+	-webkit-animation-duration: 5s; 
+	-webkit-animation-delay: 2s; 
+}
+</style>
+</head>
+<body>
+<div>背景变换</div>
+</body>
+</html> 
+
+
+

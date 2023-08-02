@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>框线背景图显示方式设定</title>
+<style type="text/css">
+div {
+	margin-top: 10px;
+	margin-left: 30px;
+	padding: 5px;
+	width: 800px;
+	height: 100px;
+	text-align: center;
+	font-weight: bolder;
+	color:#F00;
+	
+}
+
+#test1 {
+	-o-border-image: url("img/bgimg.jpg") 50 / 50px repeat;
+        -moz-border-image: url("img/bgimg.jpg") 50 / 50px repeat;
+        -webkit-border-image: url("img/bgimg.jpg") 50 / 50px repeat;
+        border-top-image: url("img/bgimg.jpg") 50 / 50px repeat;
+	}
+
+#test2 {
+	-o-border-image: url("img/bgimg.jpg") 50 / 50px round stretch;
+        -moz-border-image: url("img/bgimg.jpg") 50 / 50px round stretch;
+        -webkit-border-image: url("img/bgimg.jpg") 50 / 50px round stretch;
+        border-top-image: url("img/bgimg.jpg") 50 / 50px round stretch;
+}
+#test3 {
+	-o-border-image: url("img/bgimg.jpg") 50 / 50px stretch;
+        -moz-border-image: url("img/bgimg.jpg") 50 / 50px stretch;
+        -webkit-border-image: url("img/bgimg.jpg") 50 / 50px stretch;
+        border-top-image: url("img/bgimg.jpg") 50 / 50px stretch;
+}
+</style>
+</head>
+<body>
+<div id="test1"><p>repeat</p></div>
+<div id="test2"><p>round stretch</p></div>
+<div id="test3"><p>stretch</p></div>
+</body>
+</html>

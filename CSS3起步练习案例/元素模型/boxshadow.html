@@ -1,0 +1,48 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>元素阴影</title>
+<style type="text/css">
+div {
+	margin-top: 30px;
+	margin-left: 30px;
+	padding: 20px;
+	width: 600px;
+	height: 30px;
+        border: 1px dashed #930;
+	text-align: center;
+	font-weight: bolder;
+	color: black;
+}
+#test1 {
+	 -moz-box-shadow: 0 0 1em gold;
+         -webkit-box-shadow: 0 0 1em gold;
+        box-shadow: 0 0 1em gold;
+}
+#test2 {
+	 -moz-box-shadow: 20px -16px teal;
+         -webkit-box-shadow: 20px -16px teal;
+        box-shadow: 20px -16px teal;
+}
+#test3 {
+	-moz-box-shadow: 3px 3px red, -1em 0 0.4em #00F;
+        -webkit-box-shadow: 3px 3px red, -1em 0 0.4em #00F;
+        box-shadow: 3px 3px red, -1em 0 0.4em #00F;
+
+}
+#test4 {
+	 -moz-box-shadow: 0 0 3em pink inset;
+         -webkit-box-shadow: 0 0 3em pink inset;
+        box-shadow: 0 0 3em pink inset;
+}
+</style>
+</head>
+<body>
+<div id="test1">元素阴影</div>
+<div id="test2">元素阴影</div>
+<div id="test3">元素阴影</div>
+<div id="test4">元素阴影</div>
+</body>
+</html>
+

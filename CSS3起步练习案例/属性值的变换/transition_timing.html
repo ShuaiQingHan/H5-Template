@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>属性值变换的速度设定</title>
+<style type="text/css">
+#layout {
+	margin-top: 10px;
+	padding: 10px;
+	height: 150px;
+	width: 600px;
+	border: 1px solid #F00;
+	background-color: #FFC;
+}
+#test {
+	opacity: 0;
+	height: 150px;
+	width: 600px;
+	background-image: url("img/BG07.gif");
+
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 10s;
+	-moz-transition-timing-function: ease-in-out;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 10s;
+	-webkit-transition-timing-function: ease-in-out;
+	-o-transition-property: opacity;
+	-o-transition-duration: 10s;
+	-o-transition-timing-function: ease-in-out;
+	transition-property: opacity;
+	transition-duration: 10s;
+	transition-timing-function: ease-in-out;
+}
+#test:hover {
+	opacity: 1;
+}
+</style>
+</head>
+<body>
+<div id="layout"><div id="test">逐渐浮现的DIV块</div></div>
+</body>
+</html> 
+
+
+
